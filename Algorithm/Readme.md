@@ -1,2 +1,14 @@
 Algorithm：算法
-LRU：Least Recently Used(最近最少使用)
+请配合Quokka.js、MarkDown All in One插件使用
+# [1]. LRU：Least Recently Used(最近最少使用)
+## 特点分析
+1. 有限的存储空间
+2. 数据是有序的
+3. 能够操作数据(添加、删除、获取)
+4. 存储空间满之后，添加数据时，删除时间最久远的那条数据
+
+## 代码语言
+1. 实现一个LRUCache类型，充当存储空间
+2. 使用Arrary / Map数据结构。选用Map，因为它的时间复杂度是0(1)，数组是0(n)
+3. 使用get 和 set方法，用来获取 / 添加数据
+4. 实现删除最久远数据的方法、使用get方法后，该数据更新到最前面
